@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rental Service</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <h2>SUPERSTAR ELECTRICAL</h2>
+  <form id="rentalForm">
+    <input type="text" id="name" placeholder="Customer Name" required />
+    <input type="tel" id="phone" placeholder="Phone Number" required />
+    <input type="number" id="amount" placeholder="Daily Amount" required />
+    <input type="text" id="property" placeholder="Property Name" required />
+    <input type="text" id="size" placeholder="Property Size" required />
+    <input type="date" id="rentalDate" required />
+    <input type="file" id="picture" accept="image/*" required />
+    <button type="submit">Add Person</button>
+  </form>
+
+  <div id="customers"></div>
+  <script src="script.js"></script>
+</body>
+</html>
