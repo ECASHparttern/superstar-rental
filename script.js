@@ -30,10 +30,11 @@ const form = document.getElementById('rentalForm');
     }
 
     function calculateDays(startDate) {
-      const start = new Date(startDate);
-      const now = new Date();
-      const diff = now - start;
-      return Math.max(Math.floor(diff / (1000 * 60 * 60 * 24)), 0);
+  const start = new Date(startDate);
+  const now = new Date();
+  const diff = now - start;
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  return days >= 1 ? days : 1; // Minimum 1 day
     }
 
     function settleRental(index) {
